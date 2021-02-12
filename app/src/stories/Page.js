@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import { Header } from './Header';
 import './page.css';
+import '@progress/kendo-theme-default/dist/all.css';
 
 export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
   <article>
