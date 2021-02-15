@@ -5,7 +5,7 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 import { Button } from '@progress/kendo-react-buttons';
 
-<Meta title="MDX/Button" component={Button} />
+<Meta title="MDX/Button/Button" component={Button} />
 
 # Button
 
@@ -17,8 +17,45 @@ With `MDX` we can define a story for `Button` right in the middle of our Markdow
 
 A default button.
 
+The following constants are used in the examples below:
+
+export const ASTRONAUTS = [
+  "David Saint-Jacques",
+  "Chris Hadfield",
+  "Jeremy Hansen",
+  "Jenni Sidey",
+  "Robert Thirks",
+  "Julie Payette"
+];
+
+```javascript
+export const ASTRONAUTS = [
+  "David Saint-Jacques",
+  "Chris Hadfield",
+  "Jeremy Hansen",
+  "Jenni Sidey",
+  "Robert Thirks",
+  "Julie Payette"
+];
+```
+
 <Canvas>
   <Story name="Default Button">
       <Button>Button</Button>
   </Story>
 </Canvas>
+
+<Canvas>
+  <Story name="Default Button 2">
+      <Button>{ASTRONAUTS}</Button>
+  </Story>
+</Canvas>
+
+# Hello, *world*!
+
+Below is an example of JSX embedded in Markdown. <br /> **Try and change
+the background color!**
+
+<div style={{ padding: '20px', backgroundColor: 'tomato' }}>
+  <h3>This is JSX</h3>
+</div>
