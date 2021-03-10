@@ -1,0 +1,11 @@
+@function uux-colors($property) {
+  @return map-get($uux-colors, $property);
+}
+
+@function uux-spacings($property) {
+  @return map-get($uux-spacings, $property);
+}
+
+@function uux-shadows($property) {
+  @return map-get($uux-shadows, $property);
+}

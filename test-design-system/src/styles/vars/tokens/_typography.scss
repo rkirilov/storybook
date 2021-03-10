@@ -1,0 +1,215 @@
+$uux-typography: (
+  header-1: (
+    font-family: $font-family-metric,
+    font-style: $font-style-normal,
+    font-weight: $font-weight-300,
+    font-size: $font-size-28,
+    line-height: $line-spacing-33,
+    letter-spacing: $character-spacing-0-28,
+    color: uux-colors(grey-blue-90),
+  ),
+
+  header-2: (
+    font-family: $font-family-metric,
+    font-style: $font-style-normal,
+    font-weight: $font-weight-normal,
+    font-size: $font-size-20,
+    letter-spacing: $character-spacing-0-2,
+    color: uux-colors(grey-blue-80),
+  ),
+
+  header-3: (
+    font-family: $font-family-metric,
+    font-style: $font-style-normal,
+    font-weight: $font-weight-medium,
+    font-size: $font-size-14,
+    line-height: $line-spacing-22,
+    letter-spacing: $character-spacing-0-84,
+    color: uux-colors(grey-blue-60),
+    text-transform: $text-transform-uppercase,
+  ),
+
+  header-4: (
+    font-family: $font-family-metric,
+    font-style: $font-style-normal,
+    font-weight: $font-weight-medium,
+    font-size: $font-size-16,
+    line-height: $line-spacing-20,
+    letter-spacing: $character-spacing-0,
+    color: uux-colors(grey-blue-80),
+    text-transform: $text-transform-titlecase,
+  ),
+
+  header-5: (
+    font-family: $font-family-metric,
+    font-style: $font-style-normal,
+    font-weight: $font-weight-normal,
+    font-size: $font-size-14,
+    line-height: $line-spacing-18,
+    letter-spacing: $character-spacing-0-12,
+    color: uux-colors(grey-blue-60),
+  ),
+
+  display-1: (
+    font-family: $font-family-metric,
+    font-style: $font-style-normal,
+    font-weight: $font-weight-300,
+    font-size: $font-size-84,
+    line-height: $line-spacing-101,
+    letter-spacing: $character-spacing-0-84,
+    color: uux-colors(grey-blue-100),
+  ),
+
+  display-2: (
+    font-family: $font-family-metric,
+    font-style: $font-style-normal,
+    font-weight: $font-weight-300,
+    font-size: $font-size-70,
+    line-height: $line-spacing-84,
+    letter-spacing: $character-spacing-0-7,
+    color: uux-colors(grey-blue-100),
+  ),
+
+  display-3: (
+    font-family: $font-family-metric,
+    font-style: $font-style-normal,
+    font-weight: $font-weight-300,
+    font-size: $font-size-56,
+    line-height: $line-spacing-67,
+    letter-spacing: $character-spacing-0-56,
+    color: uux-colors(grey-blue-100),
+  ),
+
+  display-4: (
+    font-family: $font-family-metric,
+    font-style: $font-style-normal,
+    font-weight: $font-weight-300,
+    font-size: $font-size-42,
+    line-height: $line-spacing-50,
+    letter-spacing: $character-spacing-0-42,
+    color: uux-colors(grey-blue-100),
+  ),
+
+
+  display-5: (
+    font-family: $font-family-metric,
+    font-style: $font-style-normal,
+    font-weight: 400,
+    font-size: $font-size-48,
+    color: uux-colors(grey-blue-90),
+  ),
+
+  body-lg: (
+    font-family: $font-family-roboto,
+    font-style: $font-style-normal,
+    font-weight: $font-weight-normal,
+    font-size: $font-size-18,
+    line-height: $line-spacing-26,
+    letter-spacing: $character-spacing-0,
+    color: uux-colors(grey-blue-80),
+    text-transform: $text-transform-uppercase,
+  ),
+
+  body-lg-inverted: (
+    font-family: $font-family-roboto,
+    font-style: $font-style-normal,
+    font-weight: $font-weight-normal,
+    font-size: $font-size-18,
+    line-height: $line-spacing-26,
+    letter-spacing: $character-spacing-0,
+    color: uux-colors(white),
+    text-transform: $text-transform-uppercase,
+  ),
+
+  body-md: (
+    font-family: $font-family-roboto,
+    font-style: $font-style-normal,
+    font-weight: $font-weight-normal,
+    font-size: $font-size-16,
+    line-height: $line-spacing-20,
+    letter-spacing: $character-spacing-0-14,
+    color: uux-colors(grey-blue-70),
+  ),
+
+  body-md-inverted: (
+    font-family: $font-family-roboto,
+    font-style: $font-style-normal,
+    font-weight: $font-weight-normal,
+    font-size: $font-size-16,
+    line-height: $line-spacing-20,
+    letter-spacing: $character-spacing-0-14,
+    color: uux-colors(white),
+  ),
+    
+  body-sm: (
+    font-family: $font-family-roboto,
+    font-style: $font-style-normal,
+    font-weight: $font-weight-normal,
+    font-size: $font-size-14,
+    line-height: $line-spacing-18,
+    letter-spacing: $character-spacing-0-12,
+    color: uux-colors(grey-blue-80),
+  ),
+
+  body-sm-inverted: (
+    font-family: $font-family-roboto,
+    font-style: $font-style-normal,
+    font-weight: $font-weight-normal,
+    font-size: $font-size-14,
+    line-height: $line-spacing-18,
+    letter-spacing: $character-spacing-0-12,
+    color: uux-colors(white),
+  ),
+
+  body-xsm: (
+    font-family: $font-family-roboto,
+    font-style: $font-style-normal,
+    font-weight: $font-weight-normal,
+    font-size: $font-size-12,
+    line-height: $line-spacing-18,
+    letter-spacing: $character-spacing-0-12,
+    color: uux-colors(grey-blue-80),
+  ),
+
+  body-xsm-inverted: (
+    font-family: $font-family-roboto,
+    font-style: $font-style-normal,
+    font-weight: $font-weight-normal,
+    font-size: $font-size-12,
+    line-height: $line-spacing-18,
+    letter-spacing: $character-spacing-0-12,
+    color: uux-colors(white),
+  ),
+
+  primary-link: (
+    font-family: $font-family-roboto,
+    font-style: $font-style-normal,
+    font-weight: $font-weight-normal,
+    font-size: $font-size-14,
+    line-height: $line-spacing-20,
+    letter-spacing: $character-spacing-0-14,
+    color: uux-colors(blue-50),
+    text-decoration: $decoration-underline,
+  ),
+
+  secondary-link: (
+    font-family: $font-family-roboto,
+    font-style: $font-style-normal,
+    font-weight: $font-weight-normal,
+    font-size: $font-size-14,
+    line-height: $line-spacing-20,
+    letter-spacing: $character-spacing-0-14,
+    color: uux-colors(grey-blue-80),
+    text-decoration: $decoration-underline,
+  ),
+
+  label: (
+    font-family: $font-family-roboto,
+    font-style: $font-style-normal,
+    font-weight: $font-weight-normal,
+    font-size: $font-size-14,
+    line-height: $line-spacing-18,
+    letter-spacing: $character-spacing-0,
+    color: uux-colors(grey-blue-60),
+  ),
+);

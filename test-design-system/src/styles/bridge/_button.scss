@@ -1,0 +1,22 @@
+// Button Theme
+// Normal state
+$button-bg: $secondary;
+$button-border: $button-bg;
+$button-text: uux-colors(grey-blue-80);
+
+// Hover
+$button-hovered-bg:  darken($button-bg, 5%);
+$button-hovered-border: $button-hovered-bg;
+$button-hovered-text: uux-colors(grey-blue-90);
+
+// Active
+$button-pressed-bg: darken($button-bg, 10%);
+$button-pressed-border: $button-pressed-bg;
+$button-pressed-shadow: none;
+$button-focused-shadow: 0 0 0 2px rgba(uux-colors(blue-50), .8);
+
+// Primary
+$primary-button-hovered-bg: uux-colors(blue-60);
+$primary-button-pressed-bg: uux-colors(blue-70);
+$primary-button-pressed-shadow: none;
+$primary-button-focused-shadow: 0 0 0 2px rgba(uux-colors(blue-50), .4);
