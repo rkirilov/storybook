@@ -1,15 +1,17 @@
-<!--- Button.stories.mdx --->
+<!--- FlatButton.stories.mdx --->
 
 <!--- This is your Story template function, shown here in React -->
 
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 import { Button } from '@progress/kendo-react-buttons';
 
-<Meta title="Buttons/Button/Solid" component={Button} />
+<Meta title="Components/Button/Flat" component={Button} />
 
-# Solid Button
+# Flat Button
 
 The KendoReact Button provides a clickable UI functionality and enables you to display only textual content, or show predefined icons, images, and custom icons, and to render a combination of textual and image content.
+
+>When you select a new base theme, you reset all previous changes. You will lose all component customizations in the project.
 
 ## Installation
 
@@ -47,49 +49,12 @@ import { Button } from '@progress/kendo-react-buttons';
 
 ## Usage
 
-### Solid
+### Flat
 
-A solid button.
-
-The following constants are used in the examples below:
-
-export const ASTRONAUTS = [
-  "David Saint-Jacques",
-  "Chris Hadfield",
-  "Jeremy Hansen",
-  "Jenni Sidey",
-  "Robert Thirks",
-  "Julie Payette"
-];
-
-```javascript
-export const ASTRONAUTS = [
-  "David Saint-Jacques",
-  "Chris Hadfield",
-  "Jeremy Hansen",
-  "Jenni Sidey",
-  "Robert Thirks",
-  "Julie Payette"
-];
-```
+A flat button.
 
 <Canvas>
-  <Story name="Default Button">
-      <Button>Button</Button>
+  <Story name="Flat Button">
+      <Button look="flat">Flat Button</Button>
   </Story>
 </Canvas>
-
-<Canvas>
-  <Story name="Default Button 2">
-      <Button>{ASTRONAUTS}</Button>
-  </Story>
-</Canvas>
-
-# Hello, *world*!
-
-Below is an example of JSX embedded in Markdown. <br /> **Try and change
-the background color!**
-
-<div style={{ padding: '20px', backgroundColor: 'tomato' }}>
-  <h3>This is JSX</h3>
-</div>

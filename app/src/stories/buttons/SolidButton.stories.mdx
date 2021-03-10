@@ -1,0 +1,65 @@
+<!--- SolidButton.stories.mdx --->
+
+<!--- This is your Story template function, shown here in React -->
+
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Button } from '@progress/kendo-react-buttons';
+import LinkTo from '@storybook/addon-links/react';
+
+<Meta title="Components/Button/Solid" component={Button} />
+
+# Solid Button
+
+The KendoReact Button provides a clickable UI functionality and enables you to display only textual content, or show predefined icons, images, and custom icons, and to render a combination of textual and image content.
+
+>When you select a new base theme, you reset all previous changes. You will lose all component customizations in the project.
+
+* If this is an existing project that has been previously modified, follow the steps in [Select a Base Theme in a modified Project](#select-a-base-theme-in-a-modified-project)
+
+Please read the section on <LinkTo story="flat-button" kind="components-button-flat">Writing Documentation Stories</LinkTo>
+
+## Installation
+
+1. Download and install the package. Use Node.js v5.0.0 or later.
+
+```shell
+npm install --save @progress/kendo-react-buttons @progress/kendo-licensing
+
+```
+
+2. Once installed, import the package module.
+
+```js
+// ES2015 module syntax
+import { Button } from '@progress/kendo-react-buttons';
+```
+```js
+// CommonJS format
+const { Button } = require('@progress/kendo-react-buttons');
+```
+3. Install your custom theme.
+
+    3.1. From file system
+
+    3.2. From npm package
+
+
+4. Import theme package in your application
+```js
+// ES2015 module syntax
+import { Button } from '@progress/kendo-react-buttons';
+```
+
+5. Follow the instructions on the <a href="https://www.telerik.com/kendo-react-ui/my-license/">KendoReact My License page</a> to activate your license. You can skip this step if your application already contains a KendoReact license file.
+
+## Usage
+
+### Solid
+
+A solid button.
+
+<Canvas>
+  <Story name="Solid Button">
+      <Button>Button</Button>
+  </Story>
+</Canvas>
