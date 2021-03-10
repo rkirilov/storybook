@@ -1,0 +1,81 @@
+<!--- Onboarding.stories.mdx --->
+
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import LinkTo from '@storybook/addon-links/react';
+
+<Meta title="Getting Started/Onboarding" />
+
+# Set Up the React Project
+
+The easiest way to start with React is to use <a target="_blank" href="https://github.com/facebook/create-react-app">create-react-app</a>. To scaffold your project structure, follow the <a href="https://github.com/facebook/create-react-app#creating-an-app">installation instructions</a>.
+
+```shell
+npx create-react-app my-app --use-npm
+cd my-app
+npm start
+```
+or
+```shell
+yarn create react-app my-app
+cd my-app
+yarn start
+```
+
+Before you start playing with <a target="_blank" href="https://www.telerik.com/kendo-react-ui/components/introduction/">KendoReact components</a>, let's clean up the sample app a bit. Here is a list of suggested edits, with the resulting <code>src/App.js</code> code below:
+
+- src/App.js
+  - Remove everything inside the App container div: <code>`<div className="App"> ... </div>`</code>
+  - Remove the logo.svg import
+  - Import <code>{Component}</code> in addition to React
+- Remove the contents of <code>src/App.css</code>
+- Delete <code>src/logo.svg</code>
+
+```js
+import React, {Component} from 'react';
+import './App.css';
+
+class App extends Component {
+
+  render() {
+    return (
+      <div className="App">
+        <h1>Hello KendoReact!</h1>
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+# Install KendoReact components
+
+KendoReact is distributed as multiple NPM packages, scoped to <code>@progress</code>. For example, the name of the Button package is @progress/kendo-react-buttons. KendoReact is a rich suite of <a target="_blank" href="https://www.telerik.com/kendo-react-ui/components/">many modular components</a>.
+Let's add button component package and its dependencies
+
+```shell
+npm install --save @progress/kendo-react-buttons @progress/kendo-licensing
+```
+
+# Import KendoReact components
+
+Once installed, import the package module.
+
+```js
+// ES2015 module syntax
+import { Button } from '@progress/kendo-react-buttons';
+```
+```js
+// CommonJS format
+const { Button } = require('@progress/kendo-react-buttons');
+```
+
+# Install Test Design System
+
+# Import Test Design System
+
+# Activate Your Trial or Commercial License
+
+KendoReact is a professionally developed library distributed under a <a target="_blank" href="https://www.telerik.com/purchase/license-agreement/progress-kendoreact">commercial license</a>. Starting from <a target="_blank" href="https://www.telerik.com/kendo-react-ui/components/changelogs/ui-for-react/">version 4.0.0</a>, using any of the UI components from the KendoReact library requires either a commercial license key or an active trial license key.
+
+Follow the instructions on the KendoReact <a target="_blank" href="https://www.telerik.com/kendo-react-ui/my-license/">My License page</a> to activate your license.
