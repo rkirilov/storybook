@@ -21,18 +21,36 @@ cd my-app
 yarn start
 ```
 
-Before you start playing with <a target="_blank" href="https://www.telerik.com/kendo-react-ui/components/introduction/">KendoReact components</a>, let's clean up the sample app a bit. Here is a list of suggested edits, with the resulting <code>src/App.js</code> code below:
+After creating react app you need to add support for sass
+
+- Install node-sass:
+```shell
+# using npm
+npm install node-sass --save
+
+# using yarn
+yarn add node-sass
+```
+- Convert your <code>.css</code> to <code>.scss</code>.
+- Import your <code>.scss</code> files in your React components like <code>App.js</code>
+
+```js
+import './App.scss';
+```
+> More information about using sass stylesheet in create react app you can find in <a target="_blank" href="https://create-react-app.dev/docs/adding-a-sass-stylesheet/">Create React App documentation</a>.
+
+Before you start playing with < target="_blank" href="https://www.telerik.com/kendo-react-ui/components/introduction/">KendoReact components</>, let's clean up the sample app a bit. Here is a list of suggested edits, with the resulting <code>src/App.js</code> code below:
 
 - src/App.js
   - Remove everything inside the App container div: <code>`<div className="App"> ... </div>`</code>
   - Remove the logo.svg import
   - Import <code>{Component}</code> in addition to React
-- Remove the contents of <code>src/App.css</code>
+- Remove the contents of <code>src/App.scss</code>
 - Delete <code>src/logo.svg</code>
 
 ```js
 import React, {Component} from 'react';
-import './App.css';
+import './App.scss';
 
 class App extends Component {
 
