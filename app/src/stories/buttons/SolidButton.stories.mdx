@@ -39,13 +39,12 @@ const { Button } = require('@progress/kendo-react-buttons');
 
   3.2. Once you download it unzip it in the root folder of your application
 
-  3.3. Navigate to the design sistem folder and install npm modules for your design system
+  3.3. Navigate to the design system folder and install npm modules for your design system
 
 
 ```shell
 cd test-design-system
 npm install
-
 ```
   3.4. Add the test-design-system package in your application <code>package.json</code> file
 
@@ -57,12 +56,18 @@ npm install
 ```
 > <code>file:./test-design-system</code> value is the relative path to the <code>test-design-system</code> folder. For example if you put it next to your application folder the value should be <code>file:../test-design-system</code>
 
-4. Import theme package in your application in the <code>index.scss</code> file
+4. Import theme package in your application in the <code>App.scss</code> file
 ```js
 @import '~test-design-system/src/styles';
 ```
 
-5. Follow the instructions on the <a target="_blank" href="https://www.telerik.com/kendo-react-ui/my-license/">KendoReact My License page</a>to activate your license. You can skip this step if your application already contains a KendoReact license file.
+5. Install design system package in your project
+```shell
+cd ..
+npm install
+```
+
+6. Follow the instructions on the <a target="_blank" href="https://www.telerik.com/kendo-react-ui/my-license/">KendoReact My License page</a>to activate your license. You can skip this step if your application already contains a KendoReact license file.
 
 ## Usage
 
