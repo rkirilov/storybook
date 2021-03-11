@@ -35,12 +35,31 @@ const { Button } = require('@progress/kendo-react-buttons');
 ```
 3. Install your custom theme.
 
+  3.1. You can download your design system from here: <a target="_blank" href="design-system/test-design-system.zip" download="test-design-system.zip">Test Design System</a>. The download is a zip file which contains Test Design System package.
+
+  3.2. Once you download it unzip it in the root folder of your application
+
+  3.3. Navigate to the design sistem folder and install npm modules for your design system
 
 
-4. Import theme package in your application
+```shell
+cd test-design-system
+npm install
+
+```
+  3.4. Add the test-design-system package in your application <code>package.json</code> file
+
 ```js
-// ES2015 module syntax
-import { Button } from '@progress/kendo-react-buttons';
+  "dependencies": {
+    ...
+    "test-design-system": "file:./test-design-system"
+  },
+```
+> <code>file:./test-design-system</code> value is the relative path to the <code>test-design-system</code> folder. For example if you put it next to your application folder the value should be <code>file:../test-design-system</code>
+
+4. Import theme package in your application in the <code>index.scss</code> file
+```js
+@import '~test-design-system/src/styles';
 ```
 
 5. Follow the instructions on the <a target="_blank" href="https://www.telerik.com/kendo-react-ui/my-license/">KendoReact My License page</a>to activate your license. You can skip this step if your application already contains a KendoReact license file.
@@ -108,3 +127,15 @@ A solid button with icon only.
     <Button primary icon="folder"></Button>
   </Story>
 </Canvas>
+
+## Advansed Usage
+
+For examples which demonstrate all components from the Buttons package in action you can navigate to <a target="_blank" href="https://www.telerik.com/kendo-react-ui/components/buttons/">KendoReact button documentation</a>.
+
+## API Referance
+
+To see all avalable props for KendoReact Button you can navigate to <a target="_blank" href="https://www.telerik.com/kendo-react-ui/components/buttons/api/ButtonProps/">KendoReact Button API referance</a>.
+
+## Accessibility
+
+The Button is accessible by screen readers and provides full <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">WAI-ARIA</a> support. More information you can find in <a target="_blank" href="https://www.telerik.com/kendo-react-ui/components/buttons/buttongroup/accesibility/">KendoReact Button Accessibility page</a>.
