@@ -95,7 +95,39 @@ const { Button } = require('@progress/kendo-react-buttons');
 
 # Install Test Design System
 
+You can download your design system from here: <a target="_blank" href="design-system/test-design-system.zip" download="test-design-system.zip">Test Design System</a>. The download is a zip file which contains Test Design System package.
+
+  - Once you download it unzip it in the root folder of your application
+
+  - Navigate to the design system folder and install npm modules for your design system
+
+
+```shell
+cd test-design-system
+npm install
+```
+  - Add the test-design-system package in your application <code>package.json</code> file
+
+```js
+  "dependencies": {
+    ...
+    "test-design-system": "file:./test-design-system"
+  },
+```
+> <code>file:./test-design-system</code> value is the relative path to the <code>test-design-system</code> folder. For example if you put it next to your application folder the value should be <code>file:../test-design-system</code>
+
 # Import Test Design System
+
+Import theme package in your application in the <code>App.scss</code> file
+```js
+@import '~test-design-system/src/styles';
+```
+
+Install design system package in your project
+```shell
+cd ..
+npm install
+```
 
 # Activate Your Trial or Commercial License
 
