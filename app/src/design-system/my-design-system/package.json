@@ -1,0 +1,9 @@
+{
+  "name": "test-design-system",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@progress/kendo-theme-default": "^4.23.0",
+    "node-sass": "^4.14.1"
+  }
+}
